@@ -1,0 +1,45 @@
+<!--form handling-->
+<form method="post" id="add_user" action="/api/users">
+    <div class="new-user">
+        <div class="form-group">
+            <label class="text-light" for-="name">Name</label>
+            <input type="hidden" name="id" value="" />
+            <input type="text" name="name" value="" placeholder="mark stoenis" />
+        </div>
+        <div class="form-group">
+            <label class="text-light" for-="name">Email</label>
+            <input type="hidden" name="id" value="" />
+            <input type="text" name="name" value="" placeholder="example@gmail.com" />
+
+        </div>
+        <div class="form-group">
+            <label class="text-light" for-="gender">Gender</label>
+            <input type="hidden" name="id" value="" />
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="gender" value="male">
+                <label for="radio-2" class="radio-label">Male</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio"id="radio-3" name="gender" value="female">
+                <label for="radio-3" class="radio-label">Female</label>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label class="text-light" for-="gender">Status</label>
+            
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="status" value="Active">
+                <label for="radio-4" class="radio-label">Active</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-5" name="status" value="Inactive">
+                <label for="radio-5" class="radio-label">Inactive</label>
+            </div>
+
+        </div>
+        <div class=" form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+</form>
